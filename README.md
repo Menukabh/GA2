@@ -30,4 +30,20 @@ grep -v "#" data/annot.gtf | cut -f 3 | sort | uniq -c
 echo "data/" >> .gitignore
 echo "results/" > .gitignore
 
+zcat data/ERR10802863_R1.fastq.gz | wc -l
+zgrep "@" data/ERR10802863_R1.fastq.gz | wc -l
+
+zgrep -c "ACGT" data/ERR10802863_R1.fastq.gz
+zgrep -c "NNNNNNNNNN" data/ERR10802863_R1.fastq.gz
+
+
+zgrep "@" data/ERR10802863_R1.fastq.gz | cut -d '='  -f 2 | sort | uniq -c
+
+zgrep "length=35" data/ERR10802863_R1.fastq.gz | wc -l
+
+zgrep "length=35" data/ERR10802863_R1.fastq.gz | head -n 10
+zgrep -A 1 "length=35" data/ERR10802863_R1.fastq.gz | head -n 10
+
+
+
 
