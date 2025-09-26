@@ -44,6 +44,8 @@ zgrep "length=35" data/ERR10802863_R1.fastq.gz | wc -l
 zgrep "length=35" data/ERR10802863_R1.fastq.gz | head -n 10
 zgrep -A 1 "length=35" data/ERR10802863_R1.fastq.gz | head -n 10
 
+## Created a Github repo on 09/26/2025 https://github.com/Menukabh/GA2
+
 
 
 
